@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Наталия Степанец](https://up.htmlacademy.ru/htmlcss/24/user/549683).
-* Наставник: [Вадим Двухжилов].
+* Наставник: [Вадим Двухжилов](https://htmlacademy.ru/profile/ericssan).
 
 ---
 
