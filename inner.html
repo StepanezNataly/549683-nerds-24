@@ -17,61 +17,132 @@
   				<li><a href="contacts.html">Контакты</a></li>
   			</ul>
   			<ul class="user-navigation">
-  				<li class="basket">Корзина</li>
+  				<li>
+            <a class="basket-link" href="basket.html">Корзина</a>
+          </li>
   			</ul>
   		</nav>
       <h1>Магазин готовых шаблонов</h1>
   	</header>
   	<main class="container">
+
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" id="filter-fixed">
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="filter-button button">Показать</button>
+        </form>
+      </section>
+
   		<section class="catalog">
         <h2 class="visually-hidden">Список шаблонов</h2>
         <ul class="catalog-list">
-          <li class="catalog-item">
-            <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona">
-            <div class="catalog-item-modal">
+          <li class="visually-hidden catalog-item">
+            <p class="catalog-img-item">
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер шаблона Sedona">
+              <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona">
+            </p>
+            <div class="catalog-img-modal">
               <h3><a href="item-sedona.html">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
-              <a class="button-price" href="#">9 900 руб.</a>
+              <a class="button button-price" href="#">9 900 ₽</a>
             </div>
           </li>
-          <li class="catalog-item">
-            <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон Pink">
-            <div class="catalog-item-modal">
+          <li class="visually-hidden catalog-item">
+            <p class="catalog-img-item">
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер шаблона Pink App">
+              <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон Pink App">
+            </p>
+            <div class="catalog-img-modal">
               <h3><a href="item-pink.html">Pink App</a></h3>
               <p>Продуктовый лендинг приложения для IOS и Android</p>
-              <a class="button-price" href="#">9 900 руб.</a>
+              <a class="button button-price" href="#">9 900 ₽</a>
             </div>
           </li>
-          <li class="catalog-item">
-            <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон Barbershop">
-            <div class="catalog-item-modal">
+          <li class="visually-hidden catalog-item">
+            <p class="catalog-img-item">
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер шаблона Barbershop">
+              <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон Barbershop Бородинский">
+            </p>
+            <div class="visually-hidden catalog-img-modal">
               <h3><a href="item-barbershop.html">Barbershop</a></h3>
               <p>Сайт салона красоты. Для мужчин, да.</p>
-              <a class="button-price" href="#">9 900 руб.</a>
+              <a class="button button-price" href="#">9 900 ₽</a>
             </div>
           </li>
-          <li class="catalog-item">
-            <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka">
-            <div class="catalog-item-modal">
+          <li class="visually-hidden catalog-item">
+            <p class="catalog-img-item">
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер шаблона Mishka">
+              <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka">
+            </p>
+            <div class="catalog-img-modal">
               <h3><a href="item-mishka.html">Mishka</a></h3>
               <p>Интернет-магазин вязаных игрушек</p>
-              <a class="button-price" href="#">9 900 руб.</a>
+              <a class="button button-price" href="#">9 900 ₽</a>
             </div>
           </li>
-          <li class="catalog-item">
-            <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон A Plus">
-            <div class="catalog-item-modal">
+          <li class="visually-hidden catalog-item">
+            <p class="catalog-img-item">
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер шаблона A Plus">
+              <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон A Plus">
+            </p>
+            <div class="catalog-img-modal">
               <h3><a href="item-plus.html">A Plus</a></h3>
               <p>Лендинг курсов повышения квалификации</p>
-              <a class="button-price" href="#">9 900 руб.</a>
+              <a class="button button-price" href="#">9 900 ₽</a>
             </div>
           </li>
-          <li class="catalog-item">
-            <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
-            <div class="catalog-item-modal">
+          <li class="visually-hidden catalog-item">
+            <p class="catalog-img-item">
+              <img src="img/browser.svg" width="360" height="40" alt="Браузер шаблона Кваст">
+              <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
+            </p>
+            <div class="catalog-img-modal">
               <h3><a href="item-kvast.html">Кваст</a></h3>
               <p>Промо-сайт производителя крафтового кваса</p>
-              <a class="button-price" href="#">9 900 руб.</a>
+              <a class="button button-price" href="#">9 900 ₽</a>
             </div>
           </li>
         </ul>
@@ -84,6 +155,7 @@
       </section>
 
   		<section class="contacts">
+        <h2 class="visually-hidden">Контактная информация</h2>
   			<img class="contacts-map" src="img/map.png" width="1725" height="808" alt="Карта">
         <img class="contacts-marker" src="img/map-marker.svg" width="231" height="190" alt="Место на карте">
         <address class="address-contacts">
@@ -97,30 +169,36 @@
         </address>
   		</section>
 
+      <section class="modal-feedback">
+        <h2>Напишите нам</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="feedback-name" for="field-name">Ваше имя:</label>
+            <input class="user-name" id="field-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label class="feedback-name" for="field-email">Ваш e-mail:</label>
+            <input class="user-email" id="field-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label class="feedback-name" for="field-message">Текст письма:</label>
+            <input class="user-message" id="field-message" type="text" name="message" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+
   	</main>
     <footer class="main-footer">
-      <div class="footer-social">
-        <ul>
-          <li><a class="social-button" href="#">Вконтакте</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-				  <li><a class="social-button" href="#">Инстаграм</a></li>
-        </ul>
-      </div>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Страница дизайн-студии - Вконтакте</a></li>
+        <li><a class="social-button" href="#">Страница дизайн-студии - Фейсбук</a></li>
+				<li><a class="social-button" href="#">Страница дизайн-студии - Инстаграм</a></li>
+      </ul>
       <b>Давайте дружить, это выгодно!</b>
 			<p>Скидка 10% для друзей из социальных сетей.</p>
    	</footer>
-
-    <section class="modal modal-basket">
-      <h2>Корзина</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
-
-    <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
 
   </body>
 </html>
