@@ -25,6 +25,25 @@
   		</nav>
   	</header>
   	<main class="container">
+      <section class="slider">
+        <h2 class="visually-hidden">Философия дизайн-студии - слайдеры</h2>
+        <div class="slider-1">
+          <b>Долго, дорого,  скрупулезно.</b>
+          <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
+          <img src="img/slide1.png" width="698" height="413" alt="Первый слайд">
+        </div>
+        <div class="slider-2">
+          <b>Любим математику как никто другой</b>
+          <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
+          <img src="img/slide2.png" width="663" height="430" alt="Второй слайд">
+        </div>
+        <div class="slider-3">
+          <b>Только ночь, только хардкор</b>
+          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+          <img src="img/slide3.png" width="759" height="411" alt="Третий слайд">
+        </div>
+        <a class="button" href="#">Узнать больше</a>
+      </section>
   		<section class="services">
   			<h2 class="visually-hidden">Услуги</h2>
   			<ul class="services-list">
@@ -48,8 +67,7 @@
   				</li>
   			</ul>
   		</section>
-
-  		<section class="info">
+      <section class="info">
         <h2 class="visually-hidden">Информация о дизайн-студии</h2>
   			<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
   			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -60,8 +78,7 @@
   				<li>Слайдшоу и видео для корпоративных презентаций</li>
   			</ul>
   		</section>
-
-  		<aside class="info-progress">
+      <aside class="info-progress">
         <h2 class="visually-hidden">Таблица показателей работы дизайн-студии</h2>
         <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Изображение дизайн-студии Нёрдс">
   			<p>С 2004 года любим точность во всём:</p>
@@ -78,37 +95,34 @@
   				</tr>
   			</table>
   		</aside>
-
-  		<section class="partners">
+      <section class="partners">
         <h2 class="visually-hidden">Партнёры</h2>
         <ul class="partners-list">
           <li>
             <a class="partners-item" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="logo-1.png" width="199" height="68" alt="Профессиональный онлайн-курс HTML и CSS, уровень 1 на сайте HTML Academy">
+              <img src="img/logo-1.png" width="199" height="68" alt="Профессиональный онлайн-курс HTML и CSS, уровень 1 на сайте HTML Academy">
             </a>
           </li>
           <li>
             <a class="partners-item" href="#">
-              <img src="logo-2.png" width="209" height="90" alt="Барбершоп "Бородинский"">
+              <img src="img/logo-2.png" width="209" height="90" alt="Барбершоп "Бородинский"">
             </a>
           </li>
           <li>
             <a class="partners-item" href="#">
-              <img src="logo-3.png" width="185" height="52" alt="PINK - приложение для IOS и Android">
+              <img src="img/logo-3.png" width="185" height="52" alt="PINK - приложение для IOS и Android">
             </a>
           </li>
           <li>
             <a class="partners-item" href="#">
-              <img src="logo-4.png" width="173" height="84" alt="Интернет-магазин вязанных игрушек MISHKA">
+              <img src="img/logo-4.png" width="173" height="84" alt="Интернет-магазин вязанных игрушек MISHKA">
             </a>
           </li>
         </ul>
       </section>
-
-  		<section class="contacts">
+      <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <img class="contacts-map" src="img/map.png" width="1725" height="808" alt="Карта">
-        <img class="contacts-marker" src="img/map-marker.png" width="231" height="190" alt="Наше месторасположение на карте">
+        <img class="contacts-map" src="img/map.png" width="1725" height="808" alt="Наше месторасположение на карте">
         <address class="address-contacts">
           <b>Nёrds Design Studio</b>
           <p>
@@ -119,28 +133,23 @@
           <a class="button" href="#">Напишите нам</a>
         </address>
   		</section>
-
       <section class="modal-feedback">
         <h2>Напишите нам</h2>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label class="feedback-name" for="field-name">Ваше имя:</label>
-            <input class="user-name" id="field-name" type="text" name="name" placeholder="Имя Фамилия">
-          </p>
-          <p>
-            <label class="feedback-name" for="field-email">Ваш e-mail:</label>
-            <input class="user-email" id="field-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label class="feedback-name" for="field-message">Текст письма:</label>
-            <input class="user-message" id="field-message" type="text" name="message" placeholder="В свободной форме">
-          </p>
+          <label class="feedback-name">Ваше имя:
+            <input class="user-name" type="text" name="name" placeholder="Имя Фамилия">
+          </label>
+          <label class="feedback-name">Ваш e-mail:
+            <input class="user-email" type="email" name="email" placeholder="email@example.com">
+          </label>
+          <label class="feedback-name">Текст письма:
+            <input class="user-message" type="text" name="message" placeholder="В свободной форме">
+          </label>
           <button class="button" type="submit">Отправить</button>
         </form>
         <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
-
     <footer class="main-footer">
       <ul class="footer-social">
         <li><a class="social-button" href="#">Страница дизайн-студии - ВКонтакте</a></li>
@@ -150,6 +159,5 @@
       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </footer>
-
   </body>
 </html>
