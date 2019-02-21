@@ -100,11 +100,11 @@ a {
   width: 300px;
 }
 .services-item h3 {
-color: #000000;
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-text-transform: uppercase;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
 }
 .index-columns {
   display: flex;
@@ -118,10 +118,10 @@ text-transform: uppercase;
   width: 360px;
 }
 .info b {
-color: #000000;
-font-size: 45px;
-font-weight: 500;
-line-height: 45px;
+  color: #000000;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 45px;
 }
 .info-work {
   color: #000000;
@@ -179,15 +179,15 @@ line-height: 45px;
   font-style: normal;
 }
 .button {
-color: #ffffff;
-background-color: #fb565a;
-font-weight: 500;
-line-height: 18px;
-text-transform: uppercase;
-text-align: center;
-vertical-align: middle;
-border-radius: 2px;
-border: none;
+  color: #ffffff;
+  background-color: #fb565a;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 2px;
+  border: none;
 }
 .button:hover,
 .button:focus {
@@ -285,12 +285,6 @@ border: none;
   font-weight: 500;
   line-height: 55px;
 }
-/*.sort-list {
-  list-style: none;
-}
-.sort-list a {
-  color: #000000;
-}*/
 .filters {
   width: 260px;
 }

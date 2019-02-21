@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-  	<header class="main-header">
-  		<nav class="main-navigation container">
-        <a class="main-header-logo">
+    <header class="main-header">
+      <nav class="main-navigation container">
+        <a class="main-header-logo" href="index.html">
           <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
         </a>
-        <h1 class="visually-hidden">Дизайн-студия Нёрдс</h1>
         <ul class="site-navigation">
           <li><a href="studio.html">Студия</a></li>
           <li><a href="customers.html">Клиенты</a></li>
-          <li><a href="inner.html">Магазин</a></li>
+          <li class="site-navigation-current"><a href="inner.html">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
@@ -27,7 +26,7 @@
         </ul>
       </nav>
     </header>
-  	<main>
+    <main>
       <div class="features">
         <section class="slider container">
           <h2 class="visually-hidden">Философия дизайн-студии - слайдеры</h2>
@@ -36,42 +35,31 @@
             <p>Математически выверенный дизайн  для вашего сайта или мобильного приложения.</p>
             <img src="img/slide1.png" width="698" height="413" alt="Первый слайд">
           </div>
-          <!-- <div class="slider-2">
-            <b>Любим математику как никто другой</b>
-            <p>Никакого креатива, только математические формулы  для расчета идеальных пропорций.</p>
-            <img src="img/slide2.png" width="663" height="430" alt="Второй слайд">
-          </div>
-          <div class="slider-3">
-            <b>Только ночь, только хардкор</b>
-            <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-            <img src="img/slide3.png" width="759" height="411" alt="Третий слайд">
-          </div> -->
-          <!-- <a class="button" href="#">Узнать больше</a> -->
         </section>
       </div>
-  		<section class="services container">
-  			<h2 class="visually-hidden">Услуги</h2>
-  			<ul class="services-list">
-  				<li class="services-item">
-  					<h3>Веб-сайты</h3>
-              <img class="services-item-image" src="img/illustration-1.jpg" width="300" height="146" alt="Услуга по созданию веб-сайтов">
-              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-              <a class="button" href="inner.html">Заказать</a>
-  				</li>
-  				<li class="services-item">
-  					<h3>Приложения</h3>
-  						<img class="services-item-image" src="img/illustration-2.jpg" width="300" height="146" alt="Услуга по созданию приложений">
-  						<p>Покорите топ-10 приложений в AppStore и Google Play!</p>
-              <a class="button" href="inner.html">Заказать</a>
-  				</li>
-  				<li class="services-item">
-  					<h3>Презентации</h3>
-  						<img class="services-item-image" src="img/illustration-3.jpg" width="300" height="146" alt="Услуга по созданию презентаций">
-  						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-              <a class="button" href="inner.html">Заказать</a>
-  				</li>
-  			</ul>
-  		</section>
+      <section class="services container">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services-list">
+          <li class="services-item">
+            <h3>Веб-сайты</h3>
+            <img class="services-item-image" src="img/illustration-1.jpg" width="300" height="146" alt="Услуга по созданию веб-сайтов">
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="button" href="inner.html">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Приложения</h3>
+            <img class="services-item-image" src="img/illustration-2.jpg" width="300" height="146" alt="Услуга по созданию приложений">
+            <p>Покорите топ-10 приложений в AppStore и Google Play!</p>
+            <a class="button" href="inner.html">Заказать</a>
+          </li>
+          <li class="services-item">
+            <h3>Презентации</h3>
+            <img class="services-item-image" src="img/illustration-3.jpg" width="300" height="146" alt="Услуга по созданию презентаций">
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="button" href="inner.html">Заказать</a>
+          </li>
+        </ul>
+      </section>
       <div class="index-columns container">
         <section class="info">
           <h2 class="visually-hidden">Информация о дизайн-студии</h2>
@@ -139,23 +127,7 @@
           </p>
           <a class="button" href="#">Напишите нам</a>
         </address>
-  		</section>
-      <!-- <section class="modal-feedback">
-        <h2>Напишите нам</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="feedback-name">Ваше имя:
-            <input class="user-name" type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-          <label class="feedback-name">Ваш e-mail:
-            <input class="user-email" type="email" name="email" placeholder="email@example.com">
-          </label>
-          <label class="feedback-name">Текст письма:
-            <input class="user-message" type="text" name="message" placeholder="В свободной форме">
-          </label>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section> -->
+      </section>
     </main>
     <footer class="main-footer">
       <div class="container">
