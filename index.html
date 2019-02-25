@@ -22,7 +22,7 @@
         </ul>
         <ul class="user-navigation">
           <li>
-            <a class="basket-link" href="#">Корзина</a>
+            <a class="basket-link" href="basket.html">Корзина</a>
           </li>
         </ul>
       </nav>
@@ -181,5 +181,27 @@
         </div>
       </div>
     </footer>
+    <section class="modal modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-index">
+          <p class="feedback-item">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-item">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="feedback-item">
+            <label for="user-message">Текст письма:</label>
+            <input id="user-message" type="text" name="message" value="" placeholder="В свободной форме">
+            <!-- <textarea name="message" id="user-message">В свободной форме</textarea> -->
+          </p>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>

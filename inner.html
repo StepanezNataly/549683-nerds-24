@@ -99,7 +99,7 @@
           <section class="sort container">
             <span>Сортировать:</span>
             <ul class="sort-list">
-              <li><a class="sort-item sort-item-current" href="#">По цене</a></li>
+              <li><a class="sort-item active" href="#">По цене</a></li>
               <li><a class="sort-item" href="#">По типу</a></li>
               <li><a class="sort-item" href="#">По названию</a></li>
             </ul>
@@ -221,23 +221,27 @@
         </div>
       </div>
     </footer>
-<!--
-      <section class="modal-feedback">
-        <h2>Напишите нам</h2>
-        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="feedback-name">Ваше имя:
-            <input class="user-name" type="text" name="name" placeholder="Имя Фамилия">
-          </label>
-          <label class="feedback-name">Ваш e-mail:
-            <input class="user-email" type="email" name="email" placeholder="email@example.com">
-          </label>
-          <label class="feedback-name">Текст письма:
-            <input class="user-message" type="text" name="message" placeholder="В свободной форме">
-          </label>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
--->
+    <section class="modal modal-feedback">
+      <h2>Напишите нам</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="feedback-index">
+          <p class="feedback-item">
+            <label for="user-name">Ваше имя:</label>
+            <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="feedback-item">
+            <label for="user-email">Ваш e-mail:</label>
+            <input id="user-email" type="email" name="email" value="" placeholder="email@example.com">
+          </p>
+          <p class="feedback-item">
+            <label for="user-message">Текст письма:</label>
+            <input id="user-message" type="text" name="message" value="" placeholder="В свободной форме">
+            <!-- <textarea name="message" id="user-message">В свободной форме</textarea> -->
+          </p>
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
