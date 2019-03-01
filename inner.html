@@ -62,7 +62,7 @@
                   <label for="fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="rubber" disabled>
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" id="rubber">
                   <label for="rubber">Резиновая</label>
                 </li>
               </ul>
@@ -75,7 +75,7 @@
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-option">
-                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages" disabled>
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages" id="filter-advantages">
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-option">
@@ -99,7 +99,7 @@
           <section class="sort container">
             <span>Сортировать:</span>
             <ul class="sort-list">
-              <li><a class="sort-item active" href="#">По цене</a></li>
+              <li><a class="sort-item" href="#">По цене</a></li>
               <li><a class="sort-item" href="#">По типу</a></li>
               <li><a class="sort-item" href="#">По названию</a></li>
             </ul>
@@ -116,6 +116,11 @@
             <h2 class="visually-hidden">Список шаблонов</h2>
             <ul class="catalog-list">
               <li class="catalog-item">
+                <div class="catalog-browser">
+                  <span class="pin-1"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-2"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-3"><label class="visually-hidden">Иконка браузера товара</label></span>
+                </div>
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="шаблон Sedona">
                 <div class="catalog-img-modal">
                   <h3><a href="item-sedona.html">Sedona</a></h3>
@@ -124,6 +129,11 @@
                 </div>
               </li>
               <li class="catalog-item">
+                <div class="catalog-browser">
+                  <span class="pin-1"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-2"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-3"><label class="visually-hidden">Иконка браузера товара</label></span>
+                </div>
                 <img src="img/img-pink.jpg" width="360" height="576" alt="шаблон Pink App">
                 <div class="catalog-img-modal">
                   <h3><a href="item-pink.html">Pink App</a></h3>
@@ -132,6 +142,11 @@
                 </div>
               </li>
               <li class="catalog-item">
+                <div class="catalog-browser">
+                  <span class="pin-1"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-2"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-3"><label class="visually-hidden">Иконка браузера товара</label></span>
+                </div>
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="шаблон Barbershop &quot;Бородинский&quot;">
                 <div class="catalog-img-modal">
                   <h3><a href="item-barbershop.html">Barbershop</a></h3>
@@ -140,6 +155,11 @@
                 </div>
               </li>
               <li class="catalog-item">
+                <div class="catalog-browser">
+                  <span class="pin-1"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-2"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-3"><label class="visually-hidden">Иконка браузера товара</label></span>
+                </div>
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="шаблон Mishka">
                 <div class="catalog-img-modal">
                   <h3><a href="item-mishka.html">Mishka</a></h3>
@@ -148,6 +168,11 @@
                 </div>
               </li>
               <li class="catalog-item">
+                <div class="catalog-browser">
+                  <span class="pin-1"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-2"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-3"><label class="visually-hidden">Иконка браузера товара</label></span>
+                </div>
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="шаблон A Plus">
                 <div class="catalog-img-modal">
                   <h3><a href="item-plus.html">A Plus</a></h3>
@@ -156,6 +181,11 @@
                 </div>
               </li>
               <li class="catalog-item">
+                <div class="catalog-browser">
+                  <span class="pin-1"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-2"><label class="visually-hidden">Иконка браузера товара</label></span>
+                  <span class="pin-3"><label class="visually-hidden">Иконка браузера товара</label></span>
+                </div>
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="шаблон Кваст">
                 <div class="catalog-img-modal">
                   <h3><a href="item-kvast.html">Кваст</a></h3>
@@ -185,9 +215,30 @@
             <p class="phone">
               тел. +7 (812) 275-75-75
             </p>
-            <a class="button" href="#">Напишите нам</a>
+            <a class="button button-feedback" href="#">Напишите нам</a>
           </address>
         </div>
+        <section class="modal modal-feedback">
+          <h2>Напишите нам</h2>
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="feedback-index">
+              <p class="feedback-item">
+                <label for="user-name">Ваше имя:</label>
+                <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+              </p>
+              <p class="feedback-item">
+                <label for="user-email">Ваш e-mail:</label>
+                <input id="user-email" type="email" name="email" value="" placeholder="email@example.com">
+              </p>
+              <p class="feedback-item">
+                <label for="user-message">Текст письма:</label>
+                <textarea name="message" id="user-message">В свободной форме</textarea>
+              </p>
+            </div>
+            <button class="button" type="submit">Отправить</button>
+          </form>
+          <button class="modal-close" type="button">Закрыть</button>
+        </section>
       </section>
     </main>
     <footer class="main-footer">
@@ -221,27 +272,6 @@
         </div>
       </div>
     </footer>
-    <section class="modal modal-feedback">
-      <h2>Напишите нам</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="feedback-index">
-          <p class="feedback-item">
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-          </p>
-          <p class="feedback-item">
-            <label for="user-email">Ваш e-mail:</label>
-            <input id="user-email" type="email" name="email" value="" placeholder="email@example.com">
-          </p>
-          <p class="feedback-item">
-            <label for="user-message">Текст письма:</label>
-            <input id="user-message" type="text" name="message" value="" placeholder="В свободной форме">
-            <!-- <textarea name="message" id="user-message">В свободной форме</textarea> -->
-          </p>
-        </div>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
+    <script src="js/modal.js"></script>
   </body>
 </html>

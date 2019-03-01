@@ -643,9 +643,6 @@ input[type="radio"].visually-hidden {
 .sort-button a:active {
   opacity: 1;
 }
-.sort-item .active {
-  color: #000000;
-}
 .catalog {
   width: 780px;
   margin-left: 140px;
@@ -659,32 +656,61 @@ input[type="radio"].visually-hidden {
   margin-bottom: 60px;
   margin-top: 60px;
 }
+.catalog-browser {
+  position: relative;
+  background-color: #4d4d4d;
+  opacity: 0.12;
+  width: 360px;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: 0;
+}
+.catalog-browser span {
+  position: absolute;
+  content: "";
+  top: 12px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.catalog-browser .pin-1 {
+  left: 20px;
+}
+.catalog-browser .pin-2 {
+  left: 45px;
+}
+.catalog-browser .pin-3 {
+  left: 70px;
+}
 .catalog-item {
+  position: relative;
   width: 360px;
   margin: 0;
   padding: 0;
   margin-bottom: 33px;
   margin-right: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
-.catalog-item:hover {
-  border: none;
-}
-.catalog-item {
-  position: relative;
-}
 .catalog-img-modal {
   position: absolute;
   content: "";
-  top: 352px;
+  top: 378px;
   width: 360px;
-  height: 153px;
+  height: auto;
   background-color: #eeeeee;
   border: none;
-  padding: 35px 0 43px 0;
+  /*padding: 35px 0 43px 0;*/
+  opacity: 0;
+}
+.catalog-item:hover .catalog-img-modal {
+  opacity: 1;
+}
+.catalog-item:hover .catalog-browser {
+  opacity: 1;
 }
 .catalog-img-modal a {
   margin: 0;
@@ -700,7 +726,8 @@ input[type="radio"].visually-hidden {
   text-align: center;
   margin: 0;
   padding: 0;
-  padding-bottom: 26px;
+  margin-top: 30px;
+  margin-bottom: 26px;
 }
 .catalog-img-modal p {
   display: block;
@@ -712,14 +739,16 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 .catalog-img-modal .button {
+  margin: 0;
   width: 80px;
-  padding: 18px 60px;
-  margin: 30px 80px 43px 80px;
+  padding: 15px 60px;
+  margin: 26px 80px 43px 80px;
   font-weight: 500;
   text-transform: uppercase;
   line-height: 18px;
   color: #ffffff;
 }
+
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
@@ -765,6 +794,7 @@ input[type="radio"].visually-hidden {
 }
 .contacts {
   display: flex;
+  position: relative;
   background-image: url("../img/map.png");
   background-size: cover;
   background-position: center center;
@@ -871,8 +901,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+.modal-error {
+  animation: shake 0.6s;
+}
 .modal-feedback {
-  top: 1706px;
+  top: -137px;
   left: 50%;
   width: 760px;
   margin-left: -480px;
@@ -889,9 +926,11 @@ input[type="radio"].visually-hidden {
   border: 0;
   cursor: pointer;
 }
-.modal-close::before {
+.modal-close::after {
   content: "";
   position: absolute;
+  top: 0px;
+  right: 0px;
   width: 21px;
   height: 21px;
   background-image: url("../img/close-cross.svg");
@@ -936,14 +975,27 @@ input[type="radio"].visually-hidden {
   opacity: 0.5;
   border: 2px solid #d7dcde;
 }
-.feedback-index input:hover {
+.feedback-index textarea {
+  resize: none;
+  box-sizing: border-box;
+  font: inherit;
+  color: #444444;
+  opacity: 0.5;
+  border: 2px solid #d7dcde;
+  width: 760px;
+  padding: 15px 15px 80px 15px;
+}
+.feedback-index input:hover,
+ .feedback-index textarea:hover{
   border: 2px solid #b4b9bb;
 }
-.feedback-index input:focus {
+.feedback-index input:focus
+.feedback-index textarea:focus {
   border: 2px solid #000000;
   opacity: 1;
 }
-.feedback-index input:invalid {
+.feedback-index input:invalid,
+.feedback-index textarea:invalid {
   border: 2px solid #e74246;
   color: #e74246;
 }
@@ -951,3 +1003,38 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
+
+@keyframes bounce {
+  0% {
+    transform: translateY(5px);
+  }
+  70% {
+    transform: translateY(10px);
+  }
+  90% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
