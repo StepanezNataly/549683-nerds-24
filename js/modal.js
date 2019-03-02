@@ -21,7 +21,7 @@ btn.addEventListener("click", function (evt) {
       email.focus();
     } else {
       fio.focus();
-    }
+      }
   });
 
 close.addEventListener("click", function (evt) {
@@ -31,7 +31,7 @@ close.addEventListener("click", function (evt) {
   });
 
 form.addEventListener("submit", function (evt) {
-  if (!fio.value || !email.value || message.value) {
+  if (!fio.value || !email.value || !message.value) {
     evt.preventDefault();
       modal.classList.remove("modal-error");
       modal.offsetWidth = modal.offsetWidth;
